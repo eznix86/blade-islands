@@ -1,0 +1,62 @@
+{
+  "name": "blade-islands",
+  "version": "0.1.0",
+  "description": "Blade islands for Laravel",
+  "license": "MIT",
+  "homepage": "https://github.com/eznix86/blade-islands",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eznix86/blade-islands.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eznix86/blade-islands/issues"
+  },
+  "keywords": [
+    "blade",
+    "islands",
+    "laravel",
+    "react",
+    "vue",
+    "svelte",
+    "vite"
+  ],
+  "author": "Bruno Bernard <contact.brunobernard@gmail.com>",
+  "type": "module",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run"
+  },
+  "exports": {
+    "./react": "./src/react/index.js",
+    "./vue": "./src/vue/index.js",
+    "./svelte": "./src/svelte/index.js"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "svelte": ">=5",
+    "vue": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "svelte": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
+  }
+}
