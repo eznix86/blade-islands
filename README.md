@@ -1,4 +1,4 @@
-# Blade Islands For Laravel
+# 🏝️ Blade Islands For Laravel
 
 Client-side island runtime for Blade.
 
