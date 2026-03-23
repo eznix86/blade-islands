@@ -70,14 +70,25 @@ npm install blade-islands svelte @sveltejs/vite-plugin-svelte
 
 ## Quick Start
 
-Import the runtime in your Laravel frontend entry file and call `islands()`.
+Add the runtime to `resources/js/app.js`, load that entry from your Blade layout, and render an island from Blade.
 
 ### React
+
+`resources/js/app.js`
 
 ```js
 import islands from 'blade-islands/react'
 
 islands()
+```
+
+Blade layout:
+
+```php
+<head>
+    @viteReactRefresh
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 ```
 
 ```php
@@ -88,10 +99,20 @@ Resolves to `resources/js/islands/ProfileCard.jsx`.
 
 ### Vue
 
+`resources/js/app.js`
+
 ```js
 import islands from 'blade-islands/vue'
 
 islands()
+```
+
+Blade layout:
+
+```php
+<head>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 ```
 
 ```php
@@ -102,10 +123,20 @@ Resolves to `resources/js/islands/ProfileCard.vue`.
 
 ### Svelte
 
+`resources/js/app.js`
+
 ```js
 import islands from 'blade-islands/svelte'
 
 islands()
+```
+
+Blade layout:
+
+```php
+<head>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 ```
 
 ```php
